@@ -16,7 +16,7 @@ import { ButtonError } from '../Button'
 const Wrapper = styled.div<{ error: boolean }>`
   background: ${({ theme }) => transparentize(0.6, theme.colors.bg3)};
   padding: 0.75rem;
-  border-radius: 20px;
+  border-radius: 0;
 `
 
 const WarningContainer = styled.div`
@@ -25,7 +25,7 @@ const WarningContainer = styled.div`
   padding: 1rem;
   background: rgba(242, 150, 2, 0.05);
   border: 1px solid #f3841e;
-  border-radius: 20px;
+  border-radius: 0;
   overflow: auto;
 `
 
@@ -105,8 +105,8 @@ export default function TokenWarningModal({
             <TYPE.main color={'red2'}>Token imported</TYPE.main>
           </AutoRow>
           <TYPE.body color={'red2'}>
-            Anyone can create an BEP20 token on BSC with <em>any</em> name, including creating fake versions of
-            existing tokens and tokens that claim to represent projects that do not have a token.
+            Anyone can create an BEP20 token on BSC with <em>any</em> name, including creating fake versions of existing
+            tokens and tokens that claim to represent projects that do not have a token.
           </TYPE.body>
           <TYPE.body color={'red2'}>
             This interface can load arbitrary tokens by token addresses. Please take extra caution and do your research

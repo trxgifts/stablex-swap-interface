@@ -25,7 +25,7 @@ const LoadingMessage = styled.div<{ error?: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap};
   align-items: center;
   justify-content: flex-start;
-  border-radius: 12px;
+  border-radius: 0;
   margin-bottom: 20px;
   color: ${({ theme, error }) => (error ? theme.colors.red1 : 'inherit')};
   border: 1px solid ${({ theme, error }) => (error ? theme.colors.red1 : theme.colors.text4)};

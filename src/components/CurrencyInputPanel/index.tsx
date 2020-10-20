@@ -28,7 +28,6 @@ const CurrencySelect = styled.button<{ selected: boolean }>`
   font-weight: 500;
   background-color: ${({ selected, theme }) => (selected ? theme.colors.bg0 : theme.colors.primary1)};
   color: ${({ selected, theme }) => (selected ? theme.colors.text1 : theme.colors.white)};
-  border-radius: 12px;
   box-shadow: ${({ selected }) => (selected ? 'none' : '0px 6px 10px rgba(0, 0, 0, 0.075)')};
   outline: none;
   cursor: pointer;
@@ -80,7 +79,7 @@ const InputPanel = styled.div<{ hideInput?: boolean }>`
 `
 
 const Container = styled.div<{ hideInput: boolean }>`
-  border-radius: ${({ hideInput }) => (hideInput ? '8px' : '20px')};
+  /* border-radius: ${({ hideInput }) => (hideInput ? '8px' : '20px')}; */
   border: 1px solid ${({ theme }) => theme.colors.bg0};
   background-color: ${({ theme }) => theme.colors.bg0};
 `
@@ -95,7 +94,6 @@ const StyledBalanceMax = styled.button`
   height: 28px;
   background-color: ${({ theme }) => theme.colors.primary5};
   border: 1px solid ${({ theme }) => theme.colors.primary5};
-  border-radius: 0.5rem;
   font-size: 0.875rem;
 
   font-weight: 500;

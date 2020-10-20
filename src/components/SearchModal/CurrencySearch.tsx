@@ -69,11 +69,6 @@ export function CurrencySearch({
     }
   }, [isAddressSearch])
 
-  const showETH: boolean = useMemo(() => {
-    const s = searchQuery.toLowerCase().trim()
-    return s === '' || s === 'e' || s === 'et' || s === 'eth'
-  }, [searchQuery])
-
   const tokenComparator = useTokenComparator(invertSearchOrder)
 
   const audioPlay = useSelector<AppState, AppState['user']['audioPlay']>(state => state.user.audioPlay)
@@ -149,7 +144,6 @@ export function CurrencySearch({
 
   const selectedListInfo = useSelectedListInfo()
 
-
   return (
     <Column style={{ width: '100%', flex: '1 1' }}>
       <PaddedColumn gap="14px">
@@ -192,7 +186,7 @@ export function CurrencySearch({
           {({ height }) => (
             <CurrencyList
               height={height}
-              showETH={showETH}
+              showETH={false}
               currencies={filteredSortedTokens}
               onCurrencySelect={handleCurrencySelect}
               otherCurrency={otherSelectedCurrency}

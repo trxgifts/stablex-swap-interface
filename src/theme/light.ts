@@ -5,8 +5,8 @@ export default {
   colors: {
     ...base.colors,
     shadow1: '#2F80ED',
-    text1: '#452A7A',
-    text2: '#7645D9',
+    text1: '#333',
+    text2: '#585757',
     text3: '#888D9B',
     text4: '#C3C5CB',
 
@@ -21,12 +21,12 @@ export default {
     advancedBG: 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: '#43d3db',
+    primary1: '#2B2F36',
     primary4: '#bfe0e2',
-    primary5: '#daedef',
+    primary5: '#333',
 
     // color text
-    primaryText1: '#13aab5',
+    primaryText1: '#fff',
     buttonText: '#ffffff',
 
     // secondary colors

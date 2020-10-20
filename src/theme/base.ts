@@ -27,7 +27,8 @@ export default {
     md: 12,
     lg: 24
   },
-  gradient: 'linear-gradient(180deg, #54dade 0%, #24c7d6 76.22%)',
+  // gradient: 'linear-gradient(rgb(152, 152, 152) 0%, rgb(49, 48, 48) 76.22%)',
+  gradient: '#2B2F36',
   mediaWidth: mediaWidthTemplates,
   // css snippets
   flexColumnNoWrap: css`

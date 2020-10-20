@@ -5,23 +5,8 @@ import TranslatedText from '../TranslatedText'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://pancakeswap.finance/farms">
+      <StyledAbsoluteLink href="https://stablexswap.com">
         <TranslatedText translationId={2}>Farm</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pancakeswap.finance/staking">
-        <TranslatedText translationId={4}>Staking</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pancakeswap.finance/syrup">
-        SYRUP Pool
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://exchange.pancakeswap.finance" className="active">
-        <TranslatedText translationId={8}>Exchange</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pancakeswap.info">
-        Analytics
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pancakeswap.finance/lottery">
-        <TranslatedText translationId={14}>Lottery</TranslatedText>
       </StyledAbsoluteLink>
     </StyledNav>
   )
@@ -39,7 +24,7 @@ const StyledNav = styled.nav`
 `
 
 const StyledAbsoluteLink = styled.a`
-  color: #12aab5;
+  color: #fff;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
