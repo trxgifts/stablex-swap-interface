@@ -300,11 +300,7 @@ export default function Swap() {
 
   return (
     <>
-      <TokenWarningModal
-        isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
-        tokens={urlLoadedTokens}
-        onConfirm={handleConfirmTokenWarning}
-      />
+      <TokenWarningModal isOpen={dismissTokenWarning} tokens={urlLoadedTokens} onConfirm={handleConfirmTokenWarning} />
       <SyrupWarningModal
         isOpen={isSyrup}
         transactionType={syrupTransactionType}
