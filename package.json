@@ -1,6 +1,6 @@
 {
-  "name": "@pancakeswap/interface",
-  "description": "Pancakeswap Interface",
+  "name": "@stablexswap/interface",
+  "description": "stablexswap Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
