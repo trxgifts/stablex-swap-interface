@@ -100,7 +100,7 @@ export function CurrencySearch({
       onCurrencySelect(currency)
       onDismiss()
     },
-    [onDismiss, onCurrencySelect, audioPlay]
+    [onDismiss, onCurrencySelect]
   )
 
   // clear the input on open
