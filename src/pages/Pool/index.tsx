@@ -50,6 +50,9 @@ export default function Pool() {
     [tokenPairsWithLiquidityTokens, v2PairsBalances]
   )
 
+  console.log('liquidityTokensWithBalances')
+  console.log(liquidityTokensWithBalances)
+
   const v2Pairs = usePairs(liquidityTokensWithBalances.map(({ tokens }) => tokens))
   const v2IsLoading =
     fetchingV2PairBalances || v2Pairs?.length < liquidityTokensWithBalances.length || v2Pairs?.some(V2Pair => !V2Pair)
@@ -64,7 +67,7 @@ export default function Pool() {
         <SwapPoolTabs active={'pool'} />
         <AutoColumn gap="lg" justify="center">
           <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/BUSD">
-            <Text fontWeight={500} fontSize={20}>
+            <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}>
               <TranslatedText translationId={100}>Add Liquidity</TranslatedText>
             </Text>
           </ButtonPrimary>

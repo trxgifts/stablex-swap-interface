@@ -99,12 +99,6 @@ export function CurrencySearch({
     (currency: Currency) => {
       onCurrencySelect(currency)
       onDismiss()
-      if (audioPlay) {
-        // @ts-ignore
-        const audio = document.getElementById('bgMusic')
-        // @ts-ignore
-        audio && audio.play()
-      }
     },
     [onDismiss, onCurrencySelect, audioPlay]
   )

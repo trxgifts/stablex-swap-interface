@@ -143,7 +143,7 @@ export default function Header() {
         <HeaderElement>
           <Title href="https://stablexswap.com/">
             <UniIcon>{!isDark ? <img src={Logow} alt="logo" /> : <img src={Logob} alt="logo" />}</UniIcon>
-            StableX Swap
+            StableXSwap
           </Title>
         </HeaderElement>
 
