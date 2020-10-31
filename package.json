@@ -109,6 +109,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@crowdin/crowdin-api-client": "^1.8.16",
+    "@stablexswap-libs/sdk": "https://github.com/stablexlabs/stablex-sdk.git",
     "@types/webfontloader": "^1.6.32",
     "husky": "^4.3.0",
     "serialize-javascript": "^5.0.1",
