@@ -24,7 +24,7 @@ export const MaxButton = styled.button<{ width: string }>`
   cursor: pointer;
   margin: 0.25rem;
   overflow: hidden;
-  color: ${({ theme }) => theme.colors.primary1};
+  color: ${({ theme }) => theme.colors.primaryText1};
   :hover {
     border: 1px solid ${({ theme }) => theme.colors.primary1};
   }

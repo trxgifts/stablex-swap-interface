@@ -255,7 +255,7 @@ export function ButtonConfirmed({
   if (confirmed) {
     return <ButtonConfirmedStyle {...rest} />
   } else {
-    return <ButtonPrimary {...rest} altDisabledStyle={altDisabledStyle} />
+    return <ButtonLight {...rest} altDisabledStyle={altDisabledStyle} />
   }
 }
 
@@ -263,7 +263,7 @@ export function ButtonError({ error, ...rest }: { error?: boolean } & ButtonProp
   if (error) {
     return <ButtonErrorStyle {...rest} />
   } else {
-    return <ButtonPrimary {...rest} />
+    return <ButtonLight {...rest} />
   }
 }
 
