@@ -6,7 +6,7 @@ export default {
     ...base.colors,
     shadow1: 'rgba(11, 14, 17, 0.6)',
     text1: '#FFFFFF',
-    text2: '#C3C5CB',
+    text2: '#C6C6C6',
     text3: '#6C7284',
     text4: '#565A69',
 
@@ -25,13 +25,13 @@ export default {
     //primary colors
     primary1: '#D3D3D3',
     primary4: '#C0C0C0',
-    primary5: '#2B2F36',
+    primary5: '#C0C0C0',
 
     // color text
     primaryText1: '#fff',
     buttonText: '#ffffff',
 
     // secondary colors
-    secondary1: '#2B2F36'
+    secondary1: '#C0C0C0'
   }
 }
