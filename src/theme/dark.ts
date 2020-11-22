@@ -23,8 +23,8 @@ export default {
     advancedBG: 'rgba(0,0,0,0.1)',
 
     //primary colors
-    primary1: '#2B2F36',
-    primary4: '#376bad70',
+    primary1: '#D3D3D3',
+    primary4: '#C0C0C0',
     primary5: '#2B2F36',
 
     // color text
