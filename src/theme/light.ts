@@ -21,7 +21,7 @@ export default {
     advancedBG: 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: '#2B2F36',
+    primary1: '#C6C6C6',
     primary4: '#bfe0e2',
     primary5: '#333',
 
