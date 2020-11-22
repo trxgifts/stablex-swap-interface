@@ -6,7 +6,7 @@ export default {
     ...base.colors,
     shadow1: 'rgba(11, 14, 17, 0.6)',
     text1: '#FFFFFF',
-    text2: '#C3C5CB',
+    text2: '#C6C6C6',
     text3: '#6C7284',
     text4: '#565A69',
 
