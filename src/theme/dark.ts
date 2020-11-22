@@ -25,13 +25,13 @@ export default {
     //primary colors
     primary1: '#D3D3D3',
     primary4: '#C0C0C0',
-    primary5: '#2B2F36',
+    primary5: '#C0C0C0',
 
     // color text
     primaryText1: '#fff',
     buttonText: '#ffffff',
 
     // secondary colors
-    secondary1: '#2B2F36'
+    secondary1: '#C0C0C0'
   }
 }
