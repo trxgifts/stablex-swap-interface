@@ -166,7 +166,7 @@ export default function Header() {
           <HeaderElementWrap>
             {/* {isMobile && <ThemeSwitch />} */}
 
-            <Settings />
+            {<Settings />}
             {/* <Menu /> */}
             {/* <LanguageSelectMenu /> */}
           </HeaderElementWrap>
