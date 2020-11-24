@@ -350,7 +350,7 @@ export default function Swap() {
                     }
                   />
                 </ArrowWrapper>
-                {recipient === null && !showWrap && isExpertMode ? (
+                 {recipient === null ? (
                   <LinkStyledButton id="add-recipient-button" onClick={() => onChangeRecipient('')}>
                     + Add a send (optional)
                   </LinkStyledButton>
