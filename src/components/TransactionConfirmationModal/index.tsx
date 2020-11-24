@@ -52,11 +52,11 @@ function ConfirmationPendingContent({ onDismiss, pendingText }: { onDismiss: () 
             Waiting For Confirmation
           </Text>
           <AutoColumn gap="12px" justify={'center'}>
-            <Text fontWeight={600} fontSize={14} color="" textAlign="center">
+            <Text fontWeight={600} fontSize={14} color={theme.colors.primary1} textAlign="center">
               {pendingText}
             </Text>
           </AutoColumn>
-          <Text fontSize={12} color="#565A69" textAlign="center">
+          <Text fontSize={12} color={theme.colors.primary1} textAlign="center">
             Confirm this transaction in your wallet
           </Text>
         </AutoColumn>
