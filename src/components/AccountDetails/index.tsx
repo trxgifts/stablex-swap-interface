@@ -98,7 +98,7 @@ const LowerSection = styled.div`
   padding: 1.5rem;
   flex-grow: 1;
   overflow: auto;
-  background-color: ${({ theme }) => theme.colors.bg2};
+  background-color: ${({ theme }) => theme.colors.bg1};
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 20px;
 
