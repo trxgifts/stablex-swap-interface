@@ -39,8 +39,8 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-//   [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
-   [ChainId.BSCTESTNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 /**
@@ -56,19 +56,23 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.BSCTESTNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC],
+    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+  
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.BSCTESTNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC],
+    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+  
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.BSCTESTNET]: [
-    [BUSD, USDT],
-    [USDT, DAI]
+    [tBUSD, tUSDT],
+    [tUSDT, tDAI]
 //     [QUSD, BUSD]
   ]
 }
