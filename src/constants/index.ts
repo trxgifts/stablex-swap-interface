@@ -7,8 +7,12 @@ import { injected, bsc, walletconnect } from '../connectors'
 
 // Updated with New Router PROXY Address
 // Testnet Router Address Active
-export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
+// export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
 
+// PROXY
+export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
+
+// ROUTER
 // export const ROUTER_ADDRESS = '0x66F1c19572299E1bc3bBA20Aa35b1a49439375f9'
 
 // a list of tokens by chain
