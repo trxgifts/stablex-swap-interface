@@ -42,8 +42,8 @@ function useAllCommonPairs(currencyA?: Currency, currencyB?: Currency): Pair[] {
             .filter(([t0, t1]) => t0.address !== t1.address)
             .filter(([tokenA, tokenB]) => {
               if (!chainId) return true
-              const customBases = CUSTOM_BASES[chainId]
-              if (!customBases) return true
+//               const customBases = CUSTOM_BASES[chainId]
+//               if (!customBases) return true
 
               const customBasesA: Token[] | undefined = customBases[tokenA.address]
               const customBasesB: Token[] | undefined = customBases[tokenB.address]
