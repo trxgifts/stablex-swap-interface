@@ -88,6 +88,8 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
   return undefined
 }
 
+
+// update these bad contracts to prevent users from sending money directly to unretrieveable places
 const BAD_RECIPIENT_ADDRESSES: string[] = [
   '0xBCfCcbde45cE874adCB698cC183deBcF17952812', // v2 factory
   '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01

@@ -4,6 +4,8 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected, bsc, walletconnect } from '../connectors'
 
+
+// TO Update: New Router Address
 export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
 
 // a list of tokens by chain
