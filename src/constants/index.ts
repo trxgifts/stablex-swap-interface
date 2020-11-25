@@ -71,12 +71,12 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [BUSD, USDT],
     [USDT, DAI],
     [USDC, USDT].
-  ],
-    [ChainId.BSCTESTNET]: [
-    [BUSD, USDT],
-    [USDT, DAI],
-    [USDC, USDT].
   ]
+//     [ChainId.BSCTESTNET]: [
+//     [BUSD, USDT],
+//     [USDT, DAI],
+//     [USDC, USDT]
+//   ]
 }
 
 export interface WalletInfo {
