@@ -12,6 +12,7 @@ import { useActiveWeb3React } from '../../hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
 
 import { YellowCard } from '../Card'
+import Settings from '../Settings'
 // import Nav from './Nav'
 import ThemeSwitch from './ThemeSwitch'
 import { useIsDarkMode } from '../../state/user/hooks'
