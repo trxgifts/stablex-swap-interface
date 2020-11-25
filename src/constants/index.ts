@@ -16,10 +16,10 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const DAI = new Token(ChainId.BSCTESTNET, '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
-export const USDT = new Token(ChainId.BSCTESTNET, '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd', 18, 'USDT', 'Tether USD')
-export const USDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f083679233325356ebe738930', 18, 'USDC', 'USD Coin')
+export const tDAI = new Token(ChainId.BSCTESTNET, '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867', 18, 'DAI', 'Dai Stablecoin')
+export const tBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
+export const tUSDT = new Token(ChainId.BSCTESTNET, '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd', 18, 'USDT', 'Tether USD')
+export const tUSDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f083679233325356ebe738930', 18, 'USDC', 'USD Coin')
 
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
@@ -39,8 +39,8 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC],
-   [ChainId.BSCTESTNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 /**
@@ -56,20 +56,24 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC],
+    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+  
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC]
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC],
+    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+  
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.MAINNET]: [
-    [BUSD, USDT],
-    [USDT, DAI],
-    [QUSD, BUSD]
+  [ChainId.BSCTESTNET]: [
+    [tBUSD, tUSDT],
+    [tUSDT, tDAI]
+//     [QUSD, BUSD]
   ]
 }
 
