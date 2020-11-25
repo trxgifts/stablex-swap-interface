@@ -34,7 +34,7 @@ const TransactionState = styled(ExternalLink)<{ pending: boolean; success?: bool
 
 const IconWrapper = styled.div<{ pending: boolean; success?: boolean }>`
   color: ${({ pending, success, theme }) =>
-    pending ? theme.colors.primary1 : success ? theme.colors.green1 : theme.colors.red1};
+    pending ? theme.colors.text1 : success ? theme.colors.green1 : theme.colors.red1};
 `
 
 export default function Transaction({ hash }: { hash: string }) {
