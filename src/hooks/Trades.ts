@@ -45,13 +45,13 @@ function useAllCommonPairs(currencyA?: Currency, currencyB?: Currency): Pair[] {
 //               const customBases = CUSTOM_BASES[chainId]
 //               if (!customBases) return true
 
-              const customBasesA: Token[] | undefined = customBases[tokenA.address]
-              const customBasesB: Token[] | undefined = customBases[tokenB.address]
+//               const customBasesA: Token[] | undefined = customBases[tokenA.address]
+//               const customBasesB: Token[] | undefined = customBases[tokenB.address]
 
-              if (!customBasesA && !customBasesB) return true
+//               if (!customBasesA && !customBasesB) return true
 
-              if (customBasesA && !customBasesA.find(base => tokenB.equals(base))) return false
-              if (customBasesB && !customBasesB.find(base => tokenA.equals(base))) return false
+//               if (customBasesA && !customBasesA.find(base => tokenB.equals(base))) return false
+//               if (customBasesB && !customBasesB.find(base => tokenA.equals(base))) return false
 
               return true
             })
