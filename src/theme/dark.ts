@@ -11,9 +11,11 @@ export default {
     text4: '#565A69',
 
     // backgrounds / greys
+
     bg0: '#202020',
     bg1: '#303030',
     bg2: '#505050',
+
     bg3: '#40444F',
     bg4: '#565A69',
     bg5: '#6C7284',
@@ -23,8 +25,10 @@ export default {
     advancedBG: 'rgba(0,0,0,0.1)',
 
     //primary colors
-    primary1: '#505050',
-    primary4: '#C0C0C0',
+
+    primary1: '#40444F',
+    primary4: '#D3D3D3',
+
     primary5: '#C0C0C0',
 
     // color text
