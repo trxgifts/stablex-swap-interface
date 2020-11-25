@@ -1,8 +1,8 @@
 import { Currency, CurrencyAmount, Pair, Token, Trade } from '@pancakeswap-libs/sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
-
-import { BASES_TO_CHECK_TRADES_AGAINST, CUSTOM_BASES } from '../constants'
+// Add back CUSTOM_BASES for any weird/rebasing assets
+import { BASES_TO_CHECK_TRADES_AGAINST} from '../constants'
 import { PairState, usePairs } from '../data/Reserves'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
