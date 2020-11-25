@@ -5,9 +5,9 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 import { injected, bsc, walletconnect } from '../connectors'
 
 
-// Updated with New Router Address
+// Updated with New Router PROXY Address
 // Testnet Router Address Active
-export const ROUTER_ADDRESS =  '0xd931324dDbbb3aa2F254216D1e1fc5D14E1620c4'
+export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
 
 // export const ROUTER_ADDRESS = '0x66F1c19572299E1bc3bBA20Aa35b1a49439375f9'
 
