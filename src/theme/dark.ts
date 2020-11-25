@@ -29,7 +29,7 @@ export default {
     primary1: '#40444F',
     primary4: '#D3D3D3',
 
-    primary5: '#C0C0C0',
+    primary5: '#606060',
 
     // color text
     primaryText1: '#fff',
