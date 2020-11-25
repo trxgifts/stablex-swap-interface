@@ -6,7 +6,8 @@ import { injected, bsc, walletconnect } from '../connectors'
 
 
 // Updated with New Router Address
-export const TESTNET_ROUTER_ADDRESS =  '0xd931324dDbbb3aa2F254216D1e1fc5D14E1620c4'
+// Testnet Router Address below
+// export const ROUTER_ADDRESS =  '0xd931324dDbbb3aa2F254216D1e1fc5D14E1620c4'
 
 export const ROUTER_ADDRESS = '0x66F1c19572299E1bc3bBA20Aa35b1a49439375f9'
 
