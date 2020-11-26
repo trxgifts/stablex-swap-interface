@@ -73,10 +73,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.BSCTESTNET]: [
-    [tBUSD, tUSDT],
-    [tUSDT, tDAI]
-//     [QUSD, BUSD]
+  [ChainId.MAINNET]: [
+    [BUSD, USDT],
+    [USDT, DAI],
+    [QUSD, BUSD]
   ]
 }
 
