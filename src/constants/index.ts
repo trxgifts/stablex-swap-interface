@@ -19,10 +19,10 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const tDAI = new Token(ChainId.BSCTESTNET, '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867', 18, 'DAI', 'Dai Stablecoin')
-export const tBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
-export const tUSDT = new Token(ChainId.BSCTESTNET, '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd', 18, 'USDT', 'Tether USD')
-export const tUSDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f083679233325356ebe738930', 18, 'USDC', 'USD Coin')
+// export const tDAI = new Token(ChainId.BSCTESTNET, '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867', 18, 'DAI', 'Dai Stablecoin')
+// export const tBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
+// export const tUSDT = new Token(ChainId.BSCTESTNET, '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd', 18, 'USDT', 'Tether USD')
+// export const tUSDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f083679233325356ebe738930', 18, 'USDC', 'USD Coin')
 
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
@@ -35,15 +35,15 @@ export const QUSD = new Token(ChainId.MAINNET, '0xb8c540d00dd0bf76ea12e4b4b95efc
 // export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]
+//   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
-   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+//    [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 /**
