@@ -10,7 +10,6 @@ import { injected, bsc, walletconnect } from '../connectors'
 // export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
 
 // Router address Mainnet 0xCC6F313d29534B436A6D26eEe8EBcb1EC33BFa53
-
 // PROXY
 export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
 
@@ -35,32 +34,32 @@ export const QUSD = new Token(ChainId.MAINNET, '0xb8c540d00dd0bf76ea12e4b4b95efc
 // export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]
-//   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
-//    [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 /**
  * Some tokens can only be swapped via certain pairs, so we override the list of bases that are considered for these
  * tokens.
  */
-export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
-  [ChainId.MAINNET]: {
-    [ETH.address]: [DAI, WETH[ChainId.MAINNET]]
-  }
-}
+// export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
+//   [ChainId.MAINNET]: {
+//     [ETH.address]: [DAI, WETH[ChainId.MAINNET]]
+//   }
+// }
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
-//   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
+    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
   
 }
 
