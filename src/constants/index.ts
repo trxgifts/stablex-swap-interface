@@ -14,7 +14,7 @@ import { injected, bsc, walletconnect } from '../connectors'
 // export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
 
 // New Router
-export const ROUTER_ADDRESS = '0xC5A00c937c19cFd33063a9A389c506A0df7d2Fb3‘
+export const ROUTER_ADDRESS = '0xC5A00c937c19cFd33063a9A389c506A0df7d2Fb3'
 
 
 // a list of tokens by chain
