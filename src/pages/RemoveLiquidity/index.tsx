@@ -115,7 +115,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'StableXSwap LPs',
+      name: 'StableXSwap v1 LPs',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address

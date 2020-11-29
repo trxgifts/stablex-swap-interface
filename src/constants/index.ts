@@ -4,7 +4,6 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected, bsc, walletconnect } from '../connectors'
 
-
 // Updated with New Router PROXY Address
 // Testnet Router Address Active
 // export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
@@ -14,24 +13,47 @@ import { injected, bsc, walletconnect } from '../connectors'
 // export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
 
 // New Router
-export const ROUTER_ADDRESS = '0xC5A00c937c19cFd33063a9A389c506A0df7d2Fb3'
-
+export const ROUTER_ADDRESS = '0x8f2A0d8865D995364DC6843D51Cf6989001f989e'
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const tDAI = new Token(ChainId.BSCTESTNET, '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867', 18, 'DAI', 'Dai Stablecoin')
-export const tBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Binance USD')
-export const tUSDT = new Token(ChainId.BSCTESTNET, '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd', 18, 'USDT', 'Tether USD')
+export const tDAI = new Token(
+  ChainId.BSCTESTNET,
+  '0xec5dcb5dbf4b114c9d0f65bccab49ec54f6a0867',
+  18,
+  'DAI',
+  'Dai Stablecoin'
+)
+export const tBUSD = new Token(
+  ChainId.BSCTESTNET,
+  '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee',
+  18,
+  'BUSD',
+  'Binance USD'
+)
+export const tUSDT = new Token(
+  ChainId.BSCTESTNET,
+  '0x337610d27c682e347c9cd60bd4b3b107c9d34ddd',
+  18,
+  'USDT',
+  'Tether USD'
+)
 export const tUSDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f083679233325356ebe738930', 18, 'USDC', 'USD Coin')
 
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
 export const USDC = new Token(ChainId.MAINNET, '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', 18, 'USDC', 'USD Coin')
-export const QUSD = new Token(ChainId.MAINNET, '0xb8c540d00dd0bf76ea12e4b4b95efc90804f924e', 18, 'QUSD', 'Qian Stablecoin')
+export const QUSD = new Token(
+  ChainId.MAINNET,
+  '0xb8c540d00dd0bf76ea12e4b4b95efc90804f924e',
+  18,
+  'QUSD',
+  'Qian Stablecoin'
+)
 
 // export const EOS = new Token(ChainId.MAINNET, '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6', 18, 'EOS', 'EOS Token')
 // export const DOT = new Token(ChainId.MAINNET, '0x7083609fce4d1d8dc0c979aab8c869ea2c873402', 18, 'DOT', 'Polkadot Token')
@@ -46,7 +68,7 @@ const WETH_ONLY: ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
-   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
+  [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 /**
@@ -62,17 +84,15 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
-  
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-    [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
-//   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
-  
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD]
+  //   [ChainId.BSCTESTNET]: [tDAI, tBUSD, tUSDT, tUSDC]
 }
 
 //   ],
@@ -85,7 +105,6 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [BUSD, USDT],
     [USDT, DAI],
     [QUSD, BUSD]
-
   ]
 }
 
