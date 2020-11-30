@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { SwapPoolTabs } from '../../components/NavigationTabs'
 
 import Question from '../../components/QuestionHelper'
+import QuestionHelper from '../../components/QuestionHelper'
 import FullPositionCard from '../../components/PositionCard'
 import { useUserHasLiquidityInAllTokens } from '../../data/V1'
 import { useTokenBalancesWithLoadingIndicator } from '../../state/wallet/hooks'
@@ -62,6 +63,9 @@ export default function Pool() {
     <>
       <AppBody>
         <SwapPoolTabs active={'pool'} />
+         <QuestionHelper text="There is a 0.4975% withdrawal fee that goes to STAX stakers &amp; remaining LP providers to incentivise long term liquidity. STAX holders also receive fee discounts or even fee-free withdrawals. See more on our Medium"></QuestionHelper>
+
+        
         <AutoColumn gap="lg" justify="center">
           <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/BUSD">
             <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}>
