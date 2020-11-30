@@ -20,6 +20,7 @@ import TradePrice from '../../components/swap/TradePrice'
 import TokenWarningModal from '../../components/TokenWarningModal'
 import SyrupWarningModal from '../../components/SyrupWarningModal'
 import ProgressSteps from '../../components/ProgressSteps'
+import QuestionHelper from '../../components/QuestionHelper'
 
 import { BETTER_TRADE_LINK_THRESHOLD, INITIAL_ALLOWED_SLIPPAGE } from '../../constants'
 import { getTradeVersion, isTradeBetter } from '../../data/V1'
@@ -305,7 +306,18 @@ export default function Swap() {
       />
       <AppBody>
         <SwapPoolTabs active={'swap'} />
+        
         <Wrapper id="swap-page">
+          
+          
+        <RowBetween align="center">
+                      <Text fontWeight={500} fontSize={14} color={theme.colors.text2}>
+                     <i><span role="img" aria-labelledby="hey">👋</span> Are you a BSC Defi Fan? Try out QUSD &amp; learn more <a target="_blank" rel="noopener noreferrer" href="https://bsc.qian.finance/qian/home">here</a>!</i>
+                      </Text>
+                      <QuestionHelper text="QUSD is the first cross-chain stablecoin issued by QIAN protocol. In the future, QIAN protocol will also launch QHKD, QEUR and other stable assets."></QuestionHelper>
+                    </RowBetween>
+        
+          
           <ConfirmSwapModal
             isOpen={showConfirm}
             trade={trade}
