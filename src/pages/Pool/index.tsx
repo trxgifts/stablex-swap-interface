@@ -64,7 +64,7 @@ export default function Pool() {
       <AppBody>
         <SwapPoolTabs active={'pool'} />
                <RowBetween padding={'8px 8px'}>
-        <Text><QuestionHelper text="There is a 0.4975% withdrawal fee that goes to STAX stakers &amp; remaining LP providers to incentivise long term liquidity. STAX holders also receive fee discounts or even fee-free withdrawals. See more on our Medium"></QuestionHelper>
+        <Text><QuestionHelper text="There is a 0.4975% withdrawal fee that goes to STAX stakers &amp; remaining LP providers to incentivise long term liquidity. STAX holders, depending on their STAX holdings, receive discounts and even fee-free withdrawals. See more on our Medium"></QuestionHelper>
         <span> </span> Fees | Warnings<QuestionHelper text="Our contracts have been audited, but users should always exercise caution when depositing funds. We will always act to protect our users, but by proceeding, you agree to DYOR and are responsible for any losses incurred while interacting with our product."></QuestionHelper>
 </Text>
 </RowBetween>
