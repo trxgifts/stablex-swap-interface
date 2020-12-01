@@ -25,6 +25,10 @@ export const FixedGlobalStyle = createGlobalStyle`
     button {
       user-select: none;
     }
+    
+    a {
+color: #6a6c6e;
+}
 
     html {
       font-family: Kanit,'Inter', sans-serif;
