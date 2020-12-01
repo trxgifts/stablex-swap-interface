@@ -137,8 +137,7 @@ export default function Updater(): null {
 
     const outdatedCallKeys: string[] = JSON.parse(serializedOutdatedCallKeys)
     if (outdatedCallKeys.length === 0) return
-    const calls = outdatedCallKeys.map(key => parseCallKey(key)).filter(item => item.address.toLowerCase() !== '0x918d7e714243F7d9d463C37e106235dCde294ffC
-'.toLowerCase())
+    const calls = outdatedCallKeys.map(key => parseCallKey(key)).filter(item => item.address.toLowerCase() !== '0x918d7e714243F7d9d463C37e106235dCde294ffC'.toLowerCase())
 
     const chunkedCalls = chunkArray(calls, CALL_CHUNK_SIZE)
 
