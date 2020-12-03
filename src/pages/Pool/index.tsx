@@ -78,26 +78,24 @@ export default function Pool() {
                <Text color={theme.colors.text1} fontWeight={500}>
                If you have QUSD liquidity provider tokens, you can deposit them for up to 400% APY yield farming on Qian.Finance!
               </Text>
+            
+             <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">
+                 QUSD/BUSD </a>
+               <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdt">
+                 QUSD/USDT </a>
+             <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-dai">
+                 QUSD/DAI </a>
+               <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdc">
+                 QUSD/USDC </a>
           </ButtonPrimary>
 
           <AutoColumn gap="12px" style={{ width: '100%' }}>
             <RowBetween padding={'0 8px'}>
               <Text color={theme.colors.text1} fontWeight={500}>
                 <TranslatedText translationId={102}>Your Liquidity</TranslatedText>
-
               </Text>
-               <ButtonPrimary id="qianpool1" as={Link} style={{ padding: 8 }} to="https://bsc.qian.finance/stablex/qusd-busd">
-                 <Text fontWeight={300} fontSize={14} style={{ color: '#fff' }}> QUSD/BUSD </Text>
-              </ButtonPrimary>
-                <ButtonPrimary id="qianpool2" as={Link} style={{ padding: 8 }} to="https://bsc.qian.finance/stablex/qusd-usdt">
-                 <Text fontWeight={300} fontSize={14} style={{ color: '#fff' }}> QUSD/USDT </Text>
-              </ButtonPrimary> 
-              <ButtonPrimary id="qianpool3" as={Link} style={{ padding: 8 }} to="https://bsc.qian.finance/stablex/qusd-dai">
-                 <Text fontWeight={300} fontSize={14} style={{ color: '#fff' }}> QUSD/DAI </Text>
-              </ButtonPrimary> 
-              <ButtonPrimary id="qianpool4" as={Link} style={{ padding: 8 }} to="https://bsc.qian.finance/stablex/qusd-usdc">
-                 <Text fontWeight={300} fontSize={14} style={{ color: '#fff' }}> QUSD/USDC </Text>
-              </ButtonPrimary>
+              
+                
               
               <Question
                 text={TranslateString(
