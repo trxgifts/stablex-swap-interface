@@ -80,6 +80,15 @@ export default function Pool() {
             <RowBetween padding={'0 8px'}>
               <Text color={theme.colors.text1} fontWeight={500}>
                 <TranslatedText translationId={102}>Your Liquidity</TranslatedText>
+
+              </Text>
+              
+                <Text color={theme.colors.text1} fontWeight={500}>
+               If you have QUSD liquidity provider tokens, you can deposit them for yield farming！Check out the farms below 
+                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdt">QUSD/USDT</a>
+                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">QUSD/BUSD</a>
+                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdc">QUSD/UDSC</a>
+                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-dai">QUSD/DAI</a>
               </Text>
               <Question
                 text={TranslateString(
