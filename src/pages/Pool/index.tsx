@@ -132,19 +132,22 @@ export default function Pool() {
                 </StyledInternalLink>
               </Text>
               
-                  <RowBetween padding={'0 8px'}>
             <Text color={theme.colors.text1} fontWeight={500}>
                If you have QUSD liquidity provider tokens, you can deposit them for up to 400% APY yield farming on Qian.Finance!
-                <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">
+               {"\n"}
+               <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">
                  QUSD/BUSD </a>
+                 {"\n"}
                <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdt">
                  QUSD/USDT </a>
+                 {"\n"}
              <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-dai">
                  QUSD/DAI </a>
+                 {"\n"}
                <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdc">
                  QUSD/USDC </a>
+                 
               </Text>
-          </RowBetween>
             </div>
           </AutoColumn>
         </AutoColumn>
