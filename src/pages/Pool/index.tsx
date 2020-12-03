@@ -69,14 +69,7 @@ export default function Pool() {
 </Text>
 </RowBetween>
         
-        <AutoColumn gap="lg" justify="center">
-          <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/BUSD">
-            <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}>
-              <TranslatedText translationId={100}>Add Liquidity</TranslatedText>
-            </Text>
-           
-          </ButtonPrimary>
-           <RowBetween padding={'0 8px'}>
+            <RowBetween padding={'0 8px'}>
             <Text color={theme.colors.text1} fontWeight={500}>
                If you have QUSD liquidity provider tokens, you can deposit them for up to 400% APY yield farming on Qian.Finance!
                 <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">
@@ -90,6 +83,16 @@ export default function Pool() {
               </Text>
           </RowBetween>
            
+        
+        
+        <AutoColumn gap="lg" justify="center">
+          <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/BUSD">
+            <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}>
+              <TranslatedText translationId={100}>Add Liquidity</TranslatedText>
+            </Text>
+           
+          </ButtonPrimary>
+       
 
           <AutoColumn gap="12px" style={{ width: '100%' }}>
             <RowBetween padding={'0 8px'}>
