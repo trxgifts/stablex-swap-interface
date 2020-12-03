@@ -84,12 +84,21 @@ export default function Pool() {
               </Text>
               
                 <Text color={theme.colors.text1} fontWeight={500}>
-               If you have QUSD liquidity provider tokens, you can deposit them for yield farming！Check out the farms below 
-                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdt">QUSD/USDT</a>
-                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-busd">QUSD/BUSD</a>
-                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-usdc">QUSD/UDSC</a>
-                  <a target="_blank" href="https://bsc.qian.finance/stablex/qusd-dai">QUSD/DAI</a>
+               If you have QUSD liquidity provider tokens, you can deposit them for up to 400% APY yield farming on Qian.Finance!
               </Text>
+               <ButtonPrimary id="qianpool1" as={Link} style={{ padding: 16 }} to="https://bsc.qian.finance/stablex/qusd-busd">
+                 <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}> QUSD/BUSD </Text>
+              </ButtonPrimary>
+                <ButtonPrimary id="qianpool2" as={Link} style={{ padding: 16 }} to="https://bsc.qian.finance/stablex/qusd-usdt">
+                 <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}> QUSD/USDT </Text>
+              </ButtonPrimary> 
+              <ButtonPrimary id="qianpool3" as={Link} style={{ padding: 16 }} to="https://bsc.qian.finance/stablex/qusd-dai">
+                 <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}> QUSD/DAI </Text>
+              </ButtonPrimary> 
+              <ButtonPrimary id="qianpool4" as={Link} style={{ padding: 16 }} to="https://bsc.qian.finance/stablex/qusd-usdc">
+                 <Text fontWeight={500} fontSize={20} style={{ color: '#fff' }}> QUSD/USDC </Text>
+              </ButtonPrimary>
+              
               <Question
                 text={TranslateString(
                   130,
