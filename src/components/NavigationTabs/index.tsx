@@ -83,7 +83,7 @@ export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' }) {
         <TranslatedText translationId={8}>Swap</TranslatedText>
       </StyledNavLink>
       <StyledNavLink id={`pool-nav-link`} to={'/pool'} isActive={() => active === 'pool'}>
-        <TranslatedText translationId={74}>Pool</TranslatedText>
+        <TranslatedText translationId={74}>Pool (400%% APY!)</TranslatedText>
       </StyledNavLink>
     </Tabs>
   )
