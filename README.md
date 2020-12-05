@@ -1,6 +1,6 @@
 ## Intro
 
-[stablexswap](https://www.stablexswap.com/) is an automated market maker (“**AMM**”) for stable coin that allows two tokens to be exchanged on the [Binance Smart Chain](https://www.binance.org/en/smartChain) (BSC). It is fast, cheap, and allows anyone to participate.
+[stablexswap](https://www.stablexswap.com/) is an automated market maker (“**AMM**”) for stable coin that allows two tokens to be exchanged on [Binance Smart Chain](https://www.binance.org/en/smartChain) (BSC). It is fast, cheap, and allows anyone to participate.
 
 ## Run locally
 
