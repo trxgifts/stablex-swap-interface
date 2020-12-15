@@ -95,17 +95,6 @@ export default function SwapModalFooter({
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
         </RowBetween>
-<!--         <RowBetween>
-          <RowFixed>
-            <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              Liquidity Provider Fee
-            </TYPE.black>
-            <QuestionHelper text="For each trade a 0.06% fee is paid. 0.012% goes to liquidity providers and 0.048% goes to the StableXSwap community treasury." />
-          </RowFixed>
-          <TYPE.black fontSize={14}>
-            {realizedLPFee ? realizedLPFee?.toSignificant(6) + ' ' + trade.inputAmount.currency.symbol : '-'}
-          </TYPE.black>
-        </RowBetween> -->
       </AutoColumn>
 
       <AutoRow>
