@@ -95,7 +95,7 @@ export default function SwapModalFooter({
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
         </RowBetween>
-        <RowBetween>
+<!--         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
               Liquidity Provider Fee
@@ -105,7 +105,7 @@ export default function SwapModalFooter({
           <TYPE.black fontSize={14}>
             {realizedLPFee ? realizedLPFee?.toSignificant(6) + ' ' + trade.inputAmount.currency.symbol : '-'}
           </TYPE.black>
-        </RowBetween>
+        </RowBetween> -->
       </AutoColumn>
 
       <AutoRow>
