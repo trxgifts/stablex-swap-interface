@@ -147,6 +147,11 @@ export default function Header() {
             StableXSwap
           </Title>
         </HeaderElement>
+        <HeaderElement>
+          <Title target="_blank" href="https://farm.stablex.finance/">
+            Farm
+          </Title>
+        </HeaderElement>
 
         {/* <Nav /> */}
         <HeaderControls>
