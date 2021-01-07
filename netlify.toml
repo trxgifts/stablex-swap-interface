@@ -22,6 +22,7 @@ command = "(env && make web HUGO=$(which hugo) WEBSITE_BASE_URL=${DEPLOY_PRIME_U
 
 [[headers]]
   for = "/*"
+
   [headers.values]
     # We don't use iframes. Block them.
     X-Frame-Options = "SAMEORIGIN"
@@ -37,4 +38,5 @@ command = "(env && make web HUGO=$(which hugo) WEBSITE_BASE_URL=${DEPLOY_PRIME_U
     Referrer-Policy = "strict-origin-when-cross-origin"
     # Disable certain magic features, lol.
     Feature-Policy = "vibrate none; usermedia *; sync-xhr self"
+
 

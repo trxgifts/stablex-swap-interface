@@ -142,7 +142,7 @@ export default function Header() {
     <HeaderFrame>
       <RowBetween style={{ alignItems: 'flex-start' }} padding="1rem 1rem 0 1rem">
         <HeaderElement>
-          <Title href="https://stablexswap.com/">
+          <Title href="https://stablex.finance/">
             <UniIcon>{!isDark ? <img src={Logow} alt="logo" /> : <img src={Logob} alt="logo" />}</UniIcon>
             StableXSwap
           </Title>
