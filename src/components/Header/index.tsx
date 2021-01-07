@@ -148,6 +148,7 @@ export default function Header() {
           </Title>
         </HeaderElement>
         <HeaderElement>
+<UniIcon>*</UniIcon>
           <Title target="_blank" href="https://farm.stablex.finance/">
             Farm
           </Title>
