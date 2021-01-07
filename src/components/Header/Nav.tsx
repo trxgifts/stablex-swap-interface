@@ -5,7 +5,7 @@ import TranslatedText from '../TranslatedText'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://stablexswap.com">
+      <StyledAbsoluteLink href="https://stablex.finance">
         <TranslatedText translationId={2}>Farm</TranslatedText>
       </StyledAbsoluteLink>
     </StyledNav>
